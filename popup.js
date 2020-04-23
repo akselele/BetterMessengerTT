@@ -12,10 +12,10 @@
     
   //  });
 
-  $('._4u-c._1wfr._9hq').bind('DOMSubtreeModified', function(){
+  
+  $('._2sdm').on('DOMSubtreeModified', function(){
+    console.log('changed');
     $("._3oh-._58nk:contains('KEKW')").html(function (_, html) {
       return html.replace(/KEKW/g,"<img src=\"https:\/\/cdn.frankerfacez.com\/emoticon\/381875\/4\" width=\"32\" height=\"32\">")
   });
   });
-
-
