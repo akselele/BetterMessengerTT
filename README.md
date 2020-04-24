@@ -1,7 +1,7 @@
 # MessengerTT
 MessengerTT (Work In Progress) is a dumb add-on which essentially is Twitch chat right into your Messenger chat. 
 
-It's not stable and it can bug out when you change chats. Just reload the page (a few times).
+It's not stable and it can bug out when you change chats.
 
 Also: it only recognizes emotes when they are sent alone; e.g. "KEKW" will work, but "KEKW moment" will not.
 

@@ -8,7 +8,8 @@
   "version": "1.0",
 
   "content_scripts": [ {
-    "js": [ "libs/jquery.js", "emoteLib.json" ,"popup.js"],
+    "run_at": "document_start",
+    "js": [ "libs/jquery.js", "content.js"],
     "matches": [ "https://www.messenger.com/*",
       "http://www.messenger.com/*"]
   }],
@@ -18,8 +19,6 @@
    "default_popup": "popup.html"
   },
   
-  "background": { "scripts": ["libs/jquery.js", "popup.js"], "persistent": false },
-
     "web_accessible_resources": [
       "emoteLib.json"
   ],
