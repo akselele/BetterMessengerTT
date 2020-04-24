@@ -1,25 +1,35 @@
+
+$(document).ready(function() {
+    // Select the target node (tweet modal)
+    console.log($('._2sdm').get(0));
+    var target = $('._2sdm').get(0);
+  
+    // Create an observer instance
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+          
+        test($.map($("._3oh-._58nk"), $.text));
+  
+      });
+    });
+  
+    // Configuration of the observer
+    var config = { attributes:true, subtree: true };
+  
+    // Pass in the target node, as well as the observer options
+    observer.observe(target, config);
+  
+  });
+
+
   var emoturl = chrome.runtime.getURL('emoteLib.json');
   var emotesNames = [];
   var emotesLinks= [];
   var emotes = [];
-  var toolazytosetupgoodalgorithm = 0;
-
-  var link = "https://cdn.frankerfacez.com/emoticon/381875/4";
-
 
   fetch(emoturl)
     .then((response) => response.json()) //assuming file contains json
     .then((json) => setEmotes(json));
-
-
-  
-  $('.uiScrollableAreaWrap').on('DOMSubtreeModified', function(){
-    
-
-    var input = $.map($("._3oh-._58nk"), $.text)
-    test(input);
-    console.log('changed');
-  });
 
   function setEmotes(json){
     for (var i = 0; i < json.length; i++){
@@ -27,7 +37,6 @@
       emotesLinks.push(json[i]['link']);
       emotes.push(json[i]);
     }
-    console.log(emotes);
   }
 
   function replace(usedEmote){
