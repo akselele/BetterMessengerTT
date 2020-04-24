@@ -3,7 +3,7 @@ MessengerTT (Work In Progress) is a dumb add-on which essentially is Twitch chat
 
 It's not stable and it can bug out when you change chats. Just reload the page (a few times).
 
-Also: it only recognizes the emotes solely; e.g. "KEKW" will work, but "KEKW moment" will not.
+Also: it only recognizes emotes when they are sent alone; e.g. "KEKW" will work, but "KEKW moment" will not.
 
 Only three emotes added at the moment, these are KEKW; OMEGALUL and POGGERS. These aren't saved locally on your computer but are rendered through a link from [frankerfacez](https://cdn.frankerfacez.com).
 
