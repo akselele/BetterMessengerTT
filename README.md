@@ -24,6 +24,7 @@ Not yet released.
 
 TODO: 
 1. Adding emotes through another site and only allow links from Frankerfacez
+3. Being able to change emotes in messages ("hey KEKW"), this is done with "html.replace(/usedEmote/g)" but can't use variables at the moment
 2. Firefox implementation
 
 
