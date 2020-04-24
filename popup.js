@@ -1,21 +1,40 @@
+  var emoturl = chrome.runtime.getURL('emoteLib.json');
+  var emotes = [];
+  var emotesLinks= [];
 
+  fetch(emoturl)
+    .then((response) => response.json()) //assuming file contains json
+    .then((json) => setEmotes(json));
 
-
-  //   chrome.tabs.query({'active': true, 'windowId': chrome.windows.WINDOW_ID_CURRENT},
-  //  function(tabs){
-  //   var url;
-  //     url =tabs[0].url;
-      
-      
-  //       chrome.tabs.executeScript(tabs.id, {code: "$(\"._3oh-._58nk:contains(\'KEKW\')\").html(function (_, html) {\r\n          return html.replace(\/KEKW\/g,\"<img src=\\\"https:\\\/\\\/cdn.frankerfacez.com\\\/emoticon\\\/381875\\\/4\\\" width=\\\"32\\\" height=\\\"32\\\">\")\r\n     });"});        
-    
-    
-  //  });
 
   
-  $('._2sdm').on('DOMSubtreeModified', function(){
+  $('.uiScrollableAreaWrap').on('DOMSubtreeModified', function(){
+    
+
+    var input = $.map($("._3oh-._58nk"), $.text)
+    var b = input.slice(-1)[0];
+    test(input);
     console.log('changed');
-    $("._3oh-._58nk:contains('KEKW')").html(function (_, html) {
-      return html.replace(/KEKW/g,"<img src=\"https:\/\/cdn.frankerfacez.com\/emoticon\/381875\/4\" width=\"32\" height=\"32\">")
   });
+
+  function setEmotes(json){
+    for (var i = 0; i < json.length; i++){
+      emotes.push(json[i]['emote']);
+      emotesLinks.push(json[i]['link']);
+    }
+    console.log(emotes);
+  }
+
+  function replace(usedEmote){
+    $("._3oh-._58nk:contains('" + usedEmote + "')").html(function (_, html) {
+      // return html.replace(usedEmote,"<img src=\"https:\/\/cdn.frankerfacez.com\/emoticon\/381875\/4\" width=\"32\" height=\"32\">")
+      return html.replace(usedEmote,"<img src=\"https:\/\/cdn.frankerfacez.com\/emoticon\/381875\/4\" width=\"32\" height=\"32\">")
   });
+  }
+
+  function test(b){
+    for(a = 0; a < b.length; a++)
+    if(emotes.includes(b[a])){
+      replace(b[a]);
+    }
+  }
