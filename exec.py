@@ -1,24 +1,29 @@
-# import json
-# from selenium import webdriver
+import json
+from selenium import webdriver
+from time import sleep
+from selenium.webdriver.common.keys import Keys
 
 
-print('test')
 
-# jsondict = {{}}
+jsondict = []
     
-# self.driver = webdriver.Chrome()
-
-    
-# self.driver.get('https://betterttv.com/emotes/top')
+driver = webdriver.Chrome()
 
 
+driver.get('https://betterttv.com/emotes/top')
 
-# # maindiv = self.driver.find_element_by_xpath('/html/body/div/div/div[1]/div/div/div[2]/div/div[2]/div[1]/div')
-# # for i in maindiv:
-# i = 1
-# src = self.driver.find_element_by_xpath('/html/body/div/div/div[1]/div/div/div[2]/div/div[2]/div[1]/div/a['i']/img').get_attribute("src")
-# name = self.driver.find_element_by_xpath('/html/body/div/div/div[1]/div/div/div[2]/div/div[2]/div[1]/div/a['i']/div[1]').get_attribute("value")
-# jsondict[i].update({name:src})
+sleep(10)
+html = driver.find_element_by_tag_name('html')
 
-# print('test')
-# print(jsondict)
+maindiv = driver.find_elements_by_xpath('//*[@id="root"]/div/div[1]/div/div/div[2]/div/div[2]/div[1]/div')
+for i in range(1000):
+    try:
+        x = str(i+1)
+        src = driver.find_element_by_xpath('//*[@id="root"]/div/div[1]/div/div/div[2]/div/div[2]/div[1]/div/a['+ x + ']/img').get_attribute("src")
+        name = driver.find_element_by_xpath('//*[@id="root"]/div/div[1]/div/div/div[2]/div/div[2]/div[1]/div/a[' + x +']/div[1]').text
+        jsondict.append({"emote":name, "link":src})
+    except:
+        html.send_keys(Keys.END)
+
+with open('emoteLib.json', 'w') as f:
+    json.dump(jsondict, f)
