@@ -1,9 +1,7 @@
 # MessengerTT
 MessengerTT (Work In Progress) is a dumb add-on which essentially is Twitch chat right into your Messenger chat. 
 
-
-
-Only three emotes added at the moment, these are KEKW; OMEGALUL and POGGERS. These aren't saved locally on your computer but are rendered through a link from [frankerfacez](https://cdn.frankerfacez.com).
+Bugs can still happen and I'm not responsible for Chrome crashing (shouldn't be happening but haven't tested it yet).
 
 ## How to install on Chrome
 Since I'm not a certified Google developer, we have to do this the scuffed way.
