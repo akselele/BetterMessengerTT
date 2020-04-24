@@ -3,12 +3,9 @@ from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.keys import Keys
 
-
-
 jsondict = []
     
 driver = webdriver.Chrome()
-
 
 driver.get('https://betterttv.com/emotes/top')
 
@@ -26,4 +23,4 @@ for i in range(1000):
         html.send_keys(Keys.END)
 
 with open('emoteLib.json', 'w') as f:
-    json.dump(jsondict, f)
+    json.dump(jsondict, f)S
