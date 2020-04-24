@@ -22,6 +22,10 @@ Keep in mind bugs are still possible and that this is only for standalone Messen
 Not yet released. 
 
 
+TODO: 
+1. Adding emotes through another site and only allow links from Frankerfacez
+2. Firefox implementation
+
 
 
 All emotes go to their respective creators and owners. 
