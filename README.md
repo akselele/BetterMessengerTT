@@ -13,7 +13,8 @@ Since I'm not a certified Google developer, we have to do this the scuffed way.
 2. Go to [chrome://extensions](chrome://extensions)
 3. Enable 'Developer mode' on the right upper corner
 4. 'Load Unpacked' and select the whole folder you just downloaded.
-5. Voila, it should be working!
+5. Open and reload your Messenger window
+6. Voila, it should be working!
 
 Keep in mind bugs are still possible and that this is only for standalone Messenger, not the Messenger boxes on the Facebook site!
 
