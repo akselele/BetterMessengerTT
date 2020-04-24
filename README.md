@@ -1,5 +1,5 @@
-# MessengerTT
-MessengerTT (Work In Progress) is a dumb add-on which essentially is Twitch chat right into your Messenger chat. 
+# BetterMessengerTT (BMTT)
+BMTT (Work In Progress) is a dumb add-on which essentially is Twitch chat right into your Messenger chat. 
 
 Bugs can still happen and I'm not responsible for Chrome crashing (shouldn't be happening but haven't tested it yet).
 
@@ -28,3 +28,8 @@ All emotes go to their respective creators and owners.
 
 ## Currently supported emotes
 The thousand first emotes of https://betterttv.com/emotes/top. 
+
+
+####
+All emotes go to their respective creators and owners. 
+Credits for BMTT logo go to FatDonutCop (Ilias A.).
