@@ -1,9 +1,7 @@
 # MessengerTT
 MessengerTT (Work In Progress) is a dumb add-on which essentially is Twitch chat right into your Messenger chat. 
 
-It's not stable and it can bug out when you change chats.
 
-Also: it only recognizes emotes when they are sent alone; e.g. "KEKW" will work, but "KEKW moment" will not.
 
 Only three emotes added at the moment, these are KEKW; OMEGALUL and POGGERS. These aren't saved locally on your computer but are rendered through a link from [frankerfacez](https://cdn.frankerfacez.com).
 
@@ -22,7 +20,7 @@ Keep in mind bugs are still possible and that this is only for standalone Messen
 Not yet released. 
 
 
-TODO: 
+## TODO: 
 1. Adding emotes through another site and only allow links from Frankerfacez
 3. Being able to change emotes in messages ("hey KEKW"), this is done with "html.replace(/usedEmote/g)" but can't use variables at the moment
 2. Firefox implementation
@@ -30,3 +28,15 @@ TODO:
 
 
 All emotes go to their respective creators and owners. 
+
+## Currently supported emotes
+KEKW
+OMEGALUL
+POGGERS
+PepeHands
+AYAYA
+pepeLaugh
+PepoDance
+sumSmash
+5Head
+monkaS
