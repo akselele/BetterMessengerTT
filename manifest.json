@@ -25,7 +25,8 @@
 
 
   "permissions": [
-    "tabs",
-    "http://*/*", "https://*/*"
+    "activeTab",
+    "https://www.messenger.com/*",
+      "http://www.messenger.com/*"
 ]
 }
