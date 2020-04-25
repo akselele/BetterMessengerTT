@@ -1,10 +1,8 @@
 
 $(document).ready(function() {
-    // Select the target node (tweet modal)
-    console.log($('._2sdm').get(0));
+    
     var target = $('._2sdm').get(0);
   
-    // Create an observer instance
     var observer = new MutationObserver(function(mutations) {
       mutations.forEach(function(mutation) {
           
@@ -13,10 +11,9 @@ $(document).ready(function() {
       });
     });
   
-    // Configuration of the observer
+    
     var config = { attributes:true, subtree: true };
   
-    // Pass in the target node, as well as the observer options
     observer.observe(target, config);
   
   });
@@ -28,7 +25,7 @@ $(document).ready(function() {
   var emotes = [];
 
   fetch(emoturl)
-    .then((response) => response.json()) //assuming file contains json
+    .then((response) => response.json())
     .then((json) => setEmotes(json));
 
   function setEmotes(json){
@@ -41,7 +38,6 @@ $(document).ready(function() {
 
   function replace(usedEmote){
     $("._3oh-._58nk:contains('" + usedEmote + "')").html(function (_, html) {
-      // return html.replace(usedEmote,"<img src=\"https:\/\/cdn.frankerfacez.com\/emoticon\/381875\/4\" width=\"32\" height=\"32\">")
       return html.replace(usedEmote,"<img src=\""+getLinkFromName(usedEmote)+"\" width=\"32\" height=\"32\">")
   });
   }

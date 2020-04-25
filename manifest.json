@@ -3,7 +3,7 @@
   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
 
   
-  "name": "MessengerTT",
+  "name": "BetterMessengerTT",
   "description": "This extension will allow Twitch emotes on Messensger",
   "version": "1.0",
 
