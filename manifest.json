@@ -5,7 +5,7 @@
   
   "name": "BetterMessengerTT",
   "description": "This extension will allow Twitch emotes on Messensger",
-  "version": "1.0",
+  "version": "0.0.1",
 
   "content_scripts": [ {
     "run_at": "document_start",
@@ -26,7 +26,6 @@
 
   "permissions": [
     "tabs",
-    "notifications",
     "http://*/*", "https://*/*"
 ]
 }
