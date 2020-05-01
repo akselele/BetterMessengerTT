@@ -3,16 +3,20 @@ BMTT (Work In Progress) is a dumb add-on which essentially is Twitch chat right 
 
 Bugs can still happen and I'm not responsible for Chrome crashing (shouldn't be happening but haven't tested it yet).
 
-## How to install on Chrome
-Since I'm not a certified Google developer, we have to do this the scuffed way.
-1. Download the repo as a ZIP and unzip it somewhere you like
-2. Go to [chrome://extensions](chrome://extensions)
-3. Enable 'Developer mode' on the right upper corner
-4. 'Load Unpacked' and select the whole folder you just downloaded.
-5. Open and reload your Messenger window
-6. Voila, it should be working!
+Messenger version SHOULD work flawlessly and we're currently in a beta for the Facebook version.
 
-Keep in mind bugs are still possible and that this is only for standalone Messenger, not the Messenger boxes on the Facebook site!
+As things stand it works like this:
+Load your Facebook and open up a chat window.
+After 7 seconds of opening your window, whenever something happens in the chat window (hover, new message, ...) it should convert any emotes to the images.
+BUT when you close the window in order to make the images work again you have to reload your whole page. To prevent this, don't close your window but change
+chat screens without closing them, then it keeps working.
+
+I am currently looking for a fix. 
+
+## How to install on Chrome
+It got released on Chrome store!
+1. Install on [https://chrome.google.com/webstore/detail/bettermessengertt/gmllkmdhcbencpjnppfipjjajcbbbpgk](https://chrome.google.com/webstore/detail/bettermessengertt/gmllkmdhcbencpjnppfipjjajcbbbpgk)
+
 
 ## How to Install on Firefox
 Not yet released. 

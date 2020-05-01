@@ -10,8 +10,12 @@
   "content_scripts": [ {
     "run_at": "document_start",
     "js": [ "libs/jquery.js", "content.js"],
-    "matches": [ "https://www.messenger.com/*",
-      "http://www.messenger.com/*"]
+    "matches": [ "https://www.messenger.com/*"]
+  },
+  {
+    "run_at": "document_start",
+    "js": [ "libs/jquery.js", "contentFB.js"],
+    "matches": [ "https://www.facebook.com/*"]
   }],
 
   "browser_action": {
