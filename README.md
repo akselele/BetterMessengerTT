@@ -10,8 +10,17 @@ Facebook version should run better for now!
 I am currently looking for a fix. 
 
 ## How to install on Chrome
-It got released on Chrome store!
+It got released on Chrome store! Only the Messenger version works there.
 1. Install on [https://chrome.google.com/webstore/detail/bettermessengertt/gmllkmdhcbencpjnppfipjjajcbbbpgk](https://chrome.google.com/webstore/detail/bettermessengertt/gmllkmdhcbencpjnppfipjjajcbbbpgk)
+
+To install the 'beta' Facebook version do this:
+1. Download the repo as a ZIP and unzip it somewhere you like
+2. Go to chrome://extensions
+3. Enable 'Developer mode' on the right upper corner
+4. 'Load Unpacked' and select the whole folder you just downloaded.
+5. Open and reload your Messenger window
+6. Voila, it should be working!
+
 
 
 ## How to Install on Firefox
