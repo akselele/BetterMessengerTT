@@ -7,8 +7,6 @@ Messenger version SHOULD work flawlessly and we're currently in a beta for the F
 
 Facebook version should run better for now!
 
-I am currently looking for a fix. 
-
 ## How to install on Chrome
 It got released on Chrome store! Only the Messenger version works there.
 1. Install on [https://chrome.google.com/webstore/detail/bettermessengertt/gmllkmdhcbencpjnppfipjjajcbbbpgk](https://chrome.google.com/webstore/detail/bettermessengertt/gmllkmdhcbencpjnppfipjjajcbbbpgk)
