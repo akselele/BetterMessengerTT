@@ -5,11 +5,7 @@ Bugs can still happen and I'm not responsible for Chrome crashing (shouldn't be 
 
 Messenger version SHOULD work flawlessly and we're currently in a beta for the Facebook version.
 
-As things stand it works like this:
-Load your Facebook and open up a chat window.
-After 7 seconds of opening your window, whenever something happens in the chat window (hover, new message, ...) it should convert any emotes to the images.
-BUT when you close the window in order to make the images work again you have to reload your whole page. To prevent this, don't close your window but change
-chat screens without closing them, then it keeps working.
+Facebook version should run better for now!
 
 I am currently looking for a fix. 
 
